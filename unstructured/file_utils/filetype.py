@@ -448,7 +448,7 @@ def _read_file_start_for_type_check(
     exactly_one(filename=filename, file=file)
     if file is not None:
         file.seek(0)
-        file_content = file.read(4096)
+        file_content = file.read(8192)
         if isinstance(file_content, str):
             file_text = file_content
         else:
